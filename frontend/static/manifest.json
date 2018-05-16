@@ -1,6 +1,11 @@
 {
   "name": "Детский сад",
   "short_name": "Детский сад",
+  "description": "",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2C94F0",
   "icons": [
     {
       "src": "/static/img/icons/android-icon-36x36.png",
@@ -38,9 +43,5 @@
       "type": "image\/png",
       "density": "4.0"
     }
-  ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2C94F0"
+  ]
 }
