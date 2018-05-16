@@ -1,2 +1,3 @@
 export default {}
-export const API_URL = 'https://conduit.productionready.io/api'
+export const API_URL = 'http://localhost:3000'
+export const ID_TOKEN_KEY = 'id_token'

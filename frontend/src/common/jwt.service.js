@@ -1,4 +1,4 @@
-const ID_TOKEN_KEY = 'id_token'
+import { ID_TOKEN_KEY } from '@/common/config'
 
 export default {
   getToken () {

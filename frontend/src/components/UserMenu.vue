@@ -8,12 +8,12 @@
       <v-btn flat icon slot="activator">
         <v-icon>account_circle</v-icon>
       </v-btn>
-      
+
       <v-card>
         <v-list>
           <v-list-tile avatar>
             <v-list-tile-avatar>
-              <img src="/static/doc-images/john.jpg" alt="John">
+              <v-icon>photo_camera</v-icon>
             </v-list-tile-avatar>
             <v-list-tile-content>
               <v-list-tile-title>John Leider</v-list-tile-title>
@@ -57,6 +57,12 @@
 
 <script>
 export default {
-  
+  data: () => ({
+      fav: true,
+      menu: false,
+      message: false,
+      hints: true
+    })
+
 }
 </script>

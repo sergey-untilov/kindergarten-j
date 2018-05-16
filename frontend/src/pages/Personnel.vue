@@ -3,7 +3,7 @@
 
     <template>
         <v-toolbar dense flat class="mb-2">
-            
+
             <!-- <v-toolbar-title>Персонал</v-toolbar-title> -->
             <div class="headline">Персонал</div>
             <v-spacer></v-spacer>
@@ -20,19 +20,16 @@
                     <v-container grid-list-md>
                         <v-layout wrap>
                         <v-flex xs12 sm6 md4>
-                            <v-text-field v-model="editedItem.name" label="Dessert name"></v-text-field>
+                            <v-text-field v-model="editedItem.firstName" label="First Name"></v-text-field>
                         </v-flex>
                         <v-flex xs12 sm6 md4>
-                            <v-text-field v-model="editedItem.calories" label="Calories"></v-text-field>
+                            <v-text-field v-model="editedItem.lastName" label="Last Name"></v-text-field>
                         </v-flex>
                         <v-flex xs12 sm6 md4>
-                            <v-text-field v-model="editedItem.fat" label="Fat (g)"></v-text-field>
+                            <v-text-field v-model="editedItem.hireDate" label="Hire Date"></v-text-field>
                         </v-flex>
                         <v-flex xs12 sm6 md4>
-                            <v-text-field v-model="editedItem.carbs" label="Carbs (g)"></v-text-field>
-                        </v-flex>
-                        <v-flex xs12 sm6 md4>
-                            <v-text-field v-model="editedItem.protein" label="Protein (g)"></v-text-field>
+                            <v-text-field v-model="editedItem.salary" label="Salary"></v-text-field>
                         </v-flex>
                         </v-layout>
                     </v-container>
@@ -43,7 +40,7 @@
                     <v-btn color="blue darken-1" flat @click.native="save">Save</v-btn>
                     </v-card-actions>
                 </v-card>
-                </v-dialog>    
+                </v-dialog>
             </template>
             <v-btn icon small class="mb-2">
               <v-icon small color="blue">fa-filter</v-icon>
@@ -54,22 +51,21 @@
 
         </v-toolbar>
     </template>
-  
 
-    
+
+
     <v-data-table
       :headers="headers"
-      :items="desserts"
+      :items="employees"
       hide-actions
       class="elevation-1"
-      
+
     >
       <template slot="items" slot-scope="props">
-        <td>{{ props.item.name }}</td>
-        <td class="text-xs-right">{{ props.item.calories }}</td>
-        <td class="text-xs-right">{{ props.item.fat }}</td>
-        <td class="text-xs-right">{{ props.item.carbs }}</td>
-        <td class="text-xs-right">{{ props.item.protein }}</td>
+        <td>{{ props.item.firstName }}</td>
+        <td class="text-xs-right">{{ props.item.LastName }}</td>
+        <td class="text-xs-right">{{ props.item.HireDate }}</td>
+        <td class="text-xs-right">{{ props.item.Salary }}</td>
         <td class="justify-center layout px-0">
           <v-btn icon class="mx-0" @click="editItem(props.item)">
             <v-icon color="green">edit</v-icon>
@@ -93,36 +89,39 @@
       dialog: false,
       headers: [
         {
-          text: 'Dessert (100g serving)',
+          text: 'First Name',
           align: 'left',
-          sortable: false,
-          value: 'name'
+          sortable: true,
+          value: 'firstName'
         },
-        { text: 'Calories', value: 'calories' },
-        { text: 'Fat (g)', value: 'fat' },
-        { text: 'Carbs (g)', value: 'carbs' },
-        { text: 'Protein (g)', value: 'protein' },
-        { text: 'Actions', value: 'name', sortable: false }
+        { text: 'Last Name', value: 'lastName' },
+        { text: 'Hire Date', value: 'hireDate' },
+        { text: 'Salary', value: 'salary' }
       ],
       desserts: [],
       editedIndex: -1,
       editedItem: {
-        name: '',
-        calories: 0,
-        fat: 0,
-        carbs: 0,
-        protein: 0
+        firstName: '',
+        lastName: '',
+        hireDate: '',
+        salary: ''
       },
       defaultItem: {
-        name: '',
-        calories: 0,
-        fat: 0,
-        carbs: 0,
-        protein: 0
+        firstName: '',
+        lastName: '',
+        hireDate: '',
+        salary: ''
       }
     }),
 
+    mounted() {
+      this.$store.dispatch('getEmployees');
+    },
+
     computed: {
+      employees() {
+        this.$store.getters.employees
+      },
       formTitle () {
         return this.editedIndex === -1 ? 'New Item' : 'Edit Item'
       }
