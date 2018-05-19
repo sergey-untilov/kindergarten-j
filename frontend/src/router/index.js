@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import store from '@/store'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
 import Dashboard from '@/pages/Dashboard'

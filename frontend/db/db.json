@@ -2,15 +2,23 @@
   "posts": [
     { "id": 1, "title": "json-server", "author": "typicode" }
   ],
+
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 }
   ],
   "profile": { "name": "typicode" },
+
   "employees": [
-    {"id": "1", "firstName": "John", "lastName": "Smith", "hireDate": "01-01-2018", "salary": "1234.00"},
-    {"id": "2", "firstName": "Mary", "lastName": "Droph", "hireDate": "01-01-2018", "salary": "1234.00"},
-    {"id": "3", "firstName": "Kate", "lastName": "Minta", "hireDate": "01-01-2018", "salary": "1234.00"},
-    {"id": "4", "firstName": "Jose", "lastName": "Klipp", "hireDate": "01-01-2018", "salary": "1234.00"},
-    {"id": "5", "firstName": "Paul", "lastName": "Johan", "hireDate": "01-01-2018", "salary": "1234.00"}
+    { "id": "1", "firstName": "John", "lastName": "Smith", "hireDate": "01-01-2018", "salary": "1234.00" },
+    { "id": "2", "firstName": "Mary", "lastName": "Droph", "hireDate": "01-01-2018", "salary": "1234.00" },
+    { "id": "3", "firstName": "Kate", "lastName": "Minta", "hireDate": "01-01-2018", "salary": "1234.00" },
+    { "id": "4", "firstName": "Jose", "lastName": "Klipp", "hireDate": "01-01-2018", "salary": "1234.00" },
+    { "id": "5", "firstName": "Paul", "lastName": "Johan", "hireDate": "01-01-2018", "salary": "1234.00" }
+  ],
+
+  "user": [
+    { "id": "1", "username": "admin", "password": "", "email": "admin@gmail.com", "image": "", "bio": "" },
+    { "id": "2", "username": "user", "password": "", "email": "user@gmail.com", "image": "", "bio": "" }
   ]
+
 }

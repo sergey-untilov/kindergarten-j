@@ -1,14 +1,6 @@
-import {
-  EmployeesService
-} from '@/common/api.service'
-import {
-  FETCH_EMPLOYEES
-} from './actions.type'
-import {
-  FETCH_START,
-  FETCH_END,
-  UPDATE_EMPLOYEE_IN_LIST
-} from './mutations.type'
+import { EmployeesService } from '@/common/api.service'
+import { FETCH_EMPLOYEES } from './actions.type'
+import { FETCH_START, FETCH_END, UPDATE_EMPLOYEE_IN_LIST } from './mutations.type'
 
 const state = {
   employees: [],

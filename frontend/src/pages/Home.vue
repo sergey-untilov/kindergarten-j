@@ -28,7 +28,7 @@
         grid-list-lg
       >
         <v-layout row wrap>
-          
+
           <v-flex xs12>
 
             <v-card color="white" class="black--text">
@@ -40,12 +40,12 @@
                 <v-btn flat dark>Listen now</v-btn>
               </v-card-actions>
             </v-card>
-          
+
           </v-flex>
 
           <v-flex xs12>
 
-            
+
 
             <v-card color="blue-grey darken-2" class="white--text">
               <v-card-title primary-title>
@@ -70,7 +70,7 @@
                   </v-flex>
                   <v-flex xs5>
                     <v-card-media
-                      src="/static/doc-images/cards/foster.jpg"
+                      src="/static/img/sunshine-min.jpg"
                       height="125px"
                       contain
                     ></v-card-media>
@@ -91,7 +91,7 @@
                   </v-flex>
                   <v-flex xs5>
                     <v-card-media
-                      src="/static/doc-images/cards/halcyon.png"
+                      src="/static/img/sunshine-min.jpg"
                       height="125px"
                       contain
                     ></v-card-media>
