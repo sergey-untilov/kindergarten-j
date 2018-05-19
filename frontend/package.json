@@ -5,7 +5,7 @@
   "author": "unclezeppelin <uncle.zeppelin@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
+    "dev": "json-server --watch db/db.json & node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "debug": "node build/dev-server.js",
