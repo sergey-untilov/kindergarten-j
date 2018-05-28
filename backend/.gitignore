@@ -1,7 +1,7 @@
-/.mvn/
 /src/main/resources/public/
-*.jar
-*.war
+/.mvn/
+/.settings/
+
 
 /target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -28,4 +28,3 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-
