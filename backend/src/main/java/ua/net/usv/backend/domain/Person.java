@@ -1,4 +1,4 @@
-package ua.net.usv.backend.entity;
+package ua.net.usv.backend.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -28,4 +28,8 @@ public class Person {
 
     @Column
     private String email;
+
+    @OneToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 }

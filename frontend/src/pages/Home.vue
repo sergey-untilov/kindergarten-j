@@ -1,116 +1,169 @@
 <template>
-  <v-container fluid>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
-        <h3>Доброе утро, Сергей</h3>
-        <!-- <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5"> -->
-        <blockquote>
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
-      </v-layout>
-    </v-slide-y-transition>
+    <v-container fluid>
+        <section>
+            <v-parallax :src="wallpaper" height="400">
+                <v-layout
+                    column
+                    align-center
+                    justify-center
+                    class="white--text"
+                >
 
-    <template>
-  <div
-    id="e3"
-    style="max-width: 400px; margin: auto;"
-    class="grey lighten-3"
-  >
-    <v-card>
-      <v-container
-        fluid
-        style="min-height: 0;"
-        grid-list-lg
-      >
-        <v-layout row wrap>
-
-          <v-flex xs12>
-
-            <v-card color="white" class="black--text">
-              <v-card-title primary-title>
-                <div class="headline">Unlimited music now</div>
-                <div>Listen to your favorite artists and albums whenever and wherever, online and offline.</div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat dark>Listen now</v-btn>
-              </v-card-actions>
-            </v-card>
-
-          </v-flex>
-
-          <v-flex xs12>
-
-
-
-            <v-card color="blue-grey darken-2" class="white--text">
-              <v-card-title primary-title>
-                <div class="headline">Unlimited music now</div>
-                <div>Listen to your favorite artists and albums whenever and wherever, online and offline.</div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat dark>Listen now</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-flex>
-
-          <v-flex xs12>
-            <v-card color="cyan darken-2" class="white--text">
-              <v-container fluid grid-list-lg>
-                <v-layout row>
-                  <v-flex xs7>
+                    <h1 class="white--text mb-2 display-1 text-xs-center blue-shadow">Детский сад</h1>
+                    <div class="subheading mb-3 text-xs-center">Приложение для дошкольных учреждений</div>
                     <div>
-                      <div class="headline">Supermodel</div>
-                      <div>Foster the People</div>
+                        <v-btn class="blue lighten-2 mt-5" dark large to="/demo">Демо</v-btn>
+                        <v-btn class="blue lighten-2 mt-5" dark large to="/register">Регистрация</v-btn>
+                        <v-btn class="blue lighten-2 mt-5" dark large to="/login">Вход</v-btn>
                     </div>
-                  </v-flex>
-                  <v-flex xs5>
-                    <v-card-media
-                      src="/static/img/sunshine-min.jpg"
-                      height="125px"
-                      contain
-                    ></v-card-media>
-                  </v-flex>
                 </v-layout>
-              </v-container>
-            </v-card>
-          </v-flex>
-          <v-flex xs12>
-            <v-card color="purple" class="white--text">
-              <v-container fluid grid-list-lg>
-                <v-layout row>
-                  <v-flex xs7>
-                    <div>
-                      <div class="headline">Halycon Days</div>
-                      <div>Ellie Goulding</div>
-                    </div>
-                  </v-flex>
-                  <v-flex xs5>
-                    <v-card-media
-                      src="/static/img/sunshine-min.jpg"
-                      height="125px"
-                      contain
-                    ></v-card-media>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-card>
-  </div>
-</template>
+            </v-parallax>
+        </section>
 
-  </v-container>
+        <section>
+            <v-layout
+                column
+                wrap
+                class="my-5"
+                align-center
+            >
+                <v-flex xs12 sm4 class="my-3">
+                    <div class="text-xs-center">
+                        <h2 class="headline">The best way to start developing</h2>
+                        <span class="subheading">
+                Cras facilisis mi vitae nunc
+              </span>
+                    </div>
+                </v-flex>
+                <v-flex xs12>
+                    <v-container grid-list-xl>
+                        <v-layout row wrap align-center>
+                            <v-flex xs12 md4>
+                                <v-card class="elevation-0 transparent">
+                                    <v-card-text class="text-xs-center">
+                                        <v-icon x-large class="blue--text text--lighten-2">work</v-icon>
+                                    </v-card-text>
+                                    <v-card-title primary-title class="layout justify-center">
+                                        <div class="headline text-xs-center">Руководителю</div>
+                                    </v-card-title>
+                                    <v-card-text>
+                                        Персональный кабинет руководителя.<br>
+                                        Расчёт родительской платы с учётом посещения.<br>
+                                        Расчёт зарплаты работникам с учётом отработанного времени.<br>
+                                        Итоговая отчётность и диаграммы динамики изменения показателей учёта.
+                                        <br>
+                                    </v-card-text>
+                                </v-card>
+                            </v-flex>
+                            <v-flex xs12 md4>
+                                <v-card class="elevation-0 transparent">
+                                    <v-card-text class="text-xs-center">
+                                        <v-icon x-large class="blue--text text--lighten-2">face</v-icon>
+                                    </v-card-text>
+                                    <v-card-title primary-title class="layout justify-center">
+                                        <div class="headline">Родителям</div>
+                                    </v-card-title>
+                                    <v-card-text>
+                                        Персональный кабинет родителя.<br>
+                                        Оплата. Архив оплат.<br>
+                                        Оповещения об изменениях графика работы, меню, размера оплаты.<br>
+                                        Предупреждение о длительном либо кратковременном отпуске, опоздании.
+                                    </v-card-text>
+                                </v-card>
+                            </v-flex>
+                            <v-flex xs12 md4>
+                                <v-card class="elevation-0 transparent">
+                                    <v-card-text class="text-xs-center">
+                                        <v-icon x-large class="blue--text text--lighten-2">people_outline</v-icon>
+                                    </v-card-text>
+                                    <v-card-title primary-title class="layout justify-center">
+                                        <div class="headline text-xs-center">Персоналу</div>
+                                    </v-card-title>
+                                    <v-card-text>
+                                        Персональный кабинет работника.<br>
+                                        Расчётный лист заработной платы.<br>
+                                        Pellentesque habitant morbi  et malesuada fames ac turpis egestas.<br>
+                                        Nullam in aliquet odio. Aliquam eu  tincidunt. Suspendisse potenti.
+                                    </v-card-text>
+                                </v-card>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-flex>
+            </v-layout>
+        </section>
+
+        <section>
+            <v-parallax :src="wallpaper" height="400">
+                <v-layout column align-center justify-center>
+                    <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
+                    <em>Зарегистрируйтесь для использования приложения уже сейчас</em>
+                </v-layout>
+            </v-parallax>
+        </section>
+
+        <section>
+            <v-container grid-list-xl>
+                <v-layout row wrap justify-center class="my-5">
+                    <v-flex xs12 sm4>
+                        <v-card class="elevation-0 transparent">
+                            <v-card-title primary-title class="layout justify-center">
+                                <div class="headline">Company info</div>
+                            </v-card-title>
+                            <v-card-text>
+                                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                            </v-card-text>
+                        </v-card>
+                    </v-flex>
+                    <v-flex xs12 sm4 offset-sm1>
+                        <v-card class="elevation-0 transparent">
+                            <v-card-title primary-title class="layout justify-center">
+                                <div class="headline">Contact us</div>
+                            </v-card-title>
+                            <v-card-text>
+                                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+                            </v-card-text>
+                            <v-list class="transparent">
+                                <v-list-tile>
+                                    <v-list-tile-action>
+                                        <v-icon class="blue--text text--lighten-2">phone</v-icon>
+                                    </v-list-tile-action>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>777-867-5309</v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                                <v-list-tile>
+                                    <v-list-tile-action>
+                                        <v-icon class="blue--text text--lighten-2">place</v-icon>
+                                    </v-list-tile-action>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>Chicago, US</v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                                <v-list-tile>
+                                    <v-list-tile-action>
+                                        <v-icon class="blue--text text--lighten-2">email</v-icon>
+                                    </v-list-tile-action>
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                                    </v-list-tile-content>
+                                </v-list-tile>
+                            </v-list>
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+        </section>
+    </v-container>
 </template>
 
 <script>
-export default {
-  name: 'Home'
-}
+    export default {
+        name: 'Home',
+        data: () => ({
+            wallpaper: '/static/img/kidgarden-wallpaper-8.jpg'
+        })
+    }
 </script>
