@@ -1,4 +1,4 @@
-package ua.net.usv.backend.security;
+package ua.net.usv.backend.config;
 
 public class SecurityConstants {
     public static final String SECRET = "9124dc4c-c1d1-452c-9fa0-f25a16288bf3"; // SecretKeyToGenJWTs

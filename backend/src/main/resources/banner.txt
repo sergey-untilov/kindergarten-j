@@ -1,0 +1,10 @@
+
+  ${AnsiColor.YELLOW} █╗ ██╗ ██╗ ████═╗${AnsiColor.BRIGHT_BLUE}  ███╗   ███═╗ ████═╗ ████═╗ █████╗ █╗  ██╗
+  ${AnsiColor.YELLOW} █║█╔═╝ █╔╝ █╔═██║${AnsiColor.BRIGHT_BLUE} █╔══╝  █╔═██║ █╔═██║ █╔═██║ █╔═══╝ ██╗ ██║
+  ${AnsiColor.YELLOW} ██╔╝   █║  █║ ██║${AnsiColor.BRIGHT_BLUE} █║███╗ █████║ ███ ╔╝ █║ ██║ ████╗  █║█╗██║
+  ${AnsiColor.YELLOW} █╔██╗  █╚╗ █║ ██║${AnsiColor.BRIGHT_BLUE} █║ ██║ █╔═██║ █║██║  █║ ██║ █╔══╝  █║ ███║
+  ${AnsiColor.YELLOW} █║ ██╗ ██║ ████╔╝${AnsiColor.BRIGHT_BLUE}  ███╔╝ █║ ██║ █║ ██╗ ████╔╝ █████╗ █║  ██║
+  ${AnsiColor.YELLOW} ╚╝ ╚═╝ ╚═╝ ╚═══╝ ${AnsiColor.BRIGHT_BLUE}  ╚══╝  ╚╝ ╚═╝ ╚╝ ╚═╝ ╚═══╝  ╚════╝ ╚╝  ╚═╝
+
+${AnsiColor.BRIGHT_BLUE}:: Kid Garden :: Running Spring Boot ${spring-boot.version} ::
+:: http://www.kidgarden.net.ua ::${AnsiColor.DEFAULT}

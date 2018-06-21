@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "kdg_employee")
 @Data
 public class Employee {
 
@@ -27,7 +28,19 @@ public class Employee {
     @Column
     private BigDecimal salary;
 
-    @OneToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name = "job_id")
+    @ManyToOne(
+            optional=false,
+            fetch=FetchType.EAGER,
+            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}
+            )
+    @JoinColumn(name = "job_id", nullable=false, updatable=true)
     private Job job;
+
+    @ManyToOne(
+            optional=false,
+            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH}
+            )
+    @JoinColumn(name = "user_id", nullable=false, updatable=true)
+    private User user;
+
 }

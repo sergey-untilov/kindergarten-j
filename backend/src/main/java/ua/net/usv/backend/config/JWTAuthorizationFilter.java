@@ -1,4 +1,4 @@
-package ua.net.usv.backend.security;
+package ua.net.usv.backend.config;
 
 import io.jsonwebtoken.Jwts;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import static ua.net.usv.backend.security.SecurityConstants.*;
+import static ua.net.usv.backend.config.SecurityConstants.*;
 
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
