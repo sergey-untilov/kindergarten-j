@@ -1,10 +1,10 @@
 
-  ${AnsiColor.YELLOW} █╗ ██╗ ██╗ ████═╗${AnsiColor.BRIGHT_BLUE}  ███╗   ███═╗ ████═╗ ████═╗ █████╗ █╗  ██╗
-  ${AnsiColor.YELLOW} █║█╔═╝ █╔╝ █╔═██║${AnsiColor.BRIGHT_BLUE} █╔══╝  █╔═██║ █╔═██║ █╔═██║ █╔═══╝ ██╗ ██║
-  ${AnsiColor.YELLOW} ██╔╝   █║  █║ ██║${AnsiColor.BRIGHT_BLUE} █║███╗ █████║ ███ ╔╝ █║ ██║ ████╗  █║█╗██║
-  ${AnsiColor.YELLOW} █╔██╗  █╚╗ █║ ██║${AnsiColor.BRIGHT_BLUE} █║ ██║ █╔═██║ █║██║  █║ ██║ █╔══╝  █║ ███║
-  ${AnsiColor.YELLOW} █║ ██╗ ██║ ████╔╝${AnsiColor.BRIGHT_BLUE}  ███╔╝ █║ ██║ █║ ██╗ ████╔╝ █████╗ █║  ██║
-  ${AnsiColor.YELLOW} ╚╝ ╚═╝ ╚═╝ ╚═══╝ ${AnsiColor.BRIGHT_BLUE}  ╚══╝  ╚╝ ╚═╝ ╚╝ ╚═╝ ╚═══╝  ╚════╝ ╚╝  ╚═╝
+  ${AnsiColor.YELLOW} █╗ ██╗ ██╗ █╗  ██╗ ████╗  █████╗ ████╗ ${AnsiColor.BRIGHT_BLUE}  ███╗   ███╗  ████╗ █████╗ █████╗ █╗  ██╗
+  ${AnsiColor.YELLOW} █║█╔═╝ █╔╝ ██╗ ██║ █╔═██╗ █╔═══╝ █╔═██╗${AnsiColor.BRIGHT_BLUE} █╔══╝  █╔═██╗ █╔═██╗╚═█╔═╝ █╔═══╝ ██╗ ██║
+  ${AnsiColor.YELLOW} ██╔╝   █║  █╔█╗██║ █║ ██║ ████╗  ███╔═╝${AnsiColor.BRIGHT_BLUE} █║███╗ █████║ ███╔═╝  █║   ████╗  █╔█╗██║
+  ${AnsiColor.YELLOW} █╔██╗  █║  █║╚███║ █║ ██║ █╔══╝  █╔██╗ ${AnsiColor.BRIGHT_BLUE} █║╚██║ █╔═██║ █╔██╗   █║   █╔══╝  █║╚███║
+  ${AnsiColor.YELLOW} █║ ██╗ ██╗ █║ ╚██║ ████╔╝ █████╗ █║╚██╗${AnsiColor.BRIGHT_BLUE} ╚███╔╝ █║ ██║ █║╚██╗  ██╗  █████╗ █║ ╚██║
+  ${AnsiColor.YELLOW} ╚╝ ╚═╝ ╚═╝ ╚╝  ╚═╝ ╚═══╝  ╚════╝ ╚╝ ╚═╝${AnsiColor.BRIGHT_BLUE}  ╚══╝  ╚╝ ╚═╝ ╚╝ ╚═╝  ╚═╝  ╚════╝ ╚╝  ╚═╝
 
-${AnsiColor.BRIGHT_BLUE}:: Kid Garden :: Running Spring Boot ${spring-boot.version} ::
-:: http://www.kidgarden.net.ua ::${AnsiColor.DEFAULT}
+${AnsiColor.BRIGHT_BLUE}:: Kindergarten :: Running Spring Boot ${spring-boot.version} ::
+:: http://www.kindergarten.net.ua ::${AnsiColor.DEFAULT}

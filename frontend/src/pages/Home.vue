@@ -163,7 +163,7 @@
     export default {
         name: 'Home',
         data: () => ({
-            wallpaper: '/static/img/kidgarden-wallpaper-8.jpg'
+            wallpaper: '/static/img/kindergarten-wallpaper-8.jpg'
         })
     }
 </script>

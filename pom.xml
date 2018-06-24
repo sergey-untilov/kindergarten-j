@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>ua.net.usv</groupId>
-	<artifactId>kidgarden</artifactId>
+	<artifactId>kindergarten</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>kidgarden</name>
+	<name>kindergarten</name>
 	<description>Project for Spring Boot</description>
 
 	<parent>
