@@ -24,12 +24,10 @@ public class UserController {
 
     @PostMapping("/sign-up")
     public void signUp(@RequestBody User user) throws Exception {
-
         if (user.getId() != null)
             throw new Exception("A new user cannot already have an ID");
         else if (userRepository.findByLogin(user.getLogin().toLowerCase()).isPresent())
             throw new Exception("Login already used");
-
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
     }

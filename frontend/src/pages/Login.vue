@@ -1,4 +1,82 @@
 <template>
+
+    <v-container align-center>
+
+        <v-layout>
+
+            <v-flex
+                xs12
+                sm10 offset-sm1
+                md8 offset-md2
+                lg6 offset-lg3
+                xl4 offset-xl4
+            >
+
+                <v-toolbar color="blue"
+                           dark
+                           dense>
+                    <v-toolbar-title class="white--text">Вход в личный кабинет</v-toolbar-title>
+                </v-toolbar>
+
+                <v-card>
+                    <v-form ref="form" v-model="valid" lazy-validation>
+
+                        <v-card-text>
+                            <p class="text-xs-center">
+                                <router-link :to="{ name: 'register' }">
+                                    Требуется регистрация?
+                                </router-link>
+                            </p>
+                        </v-card-text>
+
+                        <v-card-text>
+
+                            <v-text-field
+                                v-model="login"
+                                :rules="nameRules"
+                                :counter="10"
+                                label="Логин"
+                                required
+                            ></v-text-field>
+                            <v-text-field
+                                v-model="password"
+                                :rules="passwordRules"
+                                label="Пароль"
+                                required
+                                :append-icon="hidePassword ? 'visibility' : 'visibility_off'"
+                                :append-icon-cb="() => (hidePassword = !hidePassword)"
+                                :type="hidePassword ? 'password' : 'text'"
+                                hint="Не менее 8 символов"
+                                min="8"
+                                counter
+                            ></v-text-field>
+
+                        </v-card-text>
+
+                        <v-card-actions>
+                            <v-btn flat icon to="/">
+                                <v-icon>fa-arrow-left</v-icon>
+                            </v-btn>
+
+                            <v-spacer></v-spacer>
+                            <!--<v-btn :disabled="!valid" @click="onSubmit" color="info">OK</v-btn>-->
+                            <v-btn @click="onSubmit" color="info">Войти</v-btn>
+                            <!--<v-btn @click="clear">clear</v-btn>-->
+                            <v-btn @click="Home" color="info">Отмена</v-btn>
+                        </v-card-actions>
+
+                    </v-form>
+
+
+                </v-card>
+
+            </v-flex>
+
+        </v-layout>
+    </v-container>
+
+
+<!--
   <div class="auth-page">
     <div class="container page">
       <div class="row">
@@ -39,23 +117,23 @@
       </div>
     </div>
   </div>
+-->
 </template>
 <script>
 import { mapState } from 'vuex'
 import { LOGIN } from '@/store/actions.type'
 
 export default {
-  name: 'login',
   data () {
     return {
-      email: null,
+      login: null,
       password: null
     }
   },
   methods: {
-    onSubmit (email, password) {
+    onSubmit (login, password) {
       this.$store
-        .dispatch(LOGIN, { email, password })
+        .dispatch(LOGIN, { login, password })
         .then(() => this.$router.push({ name: 'home' }))
     }
   },

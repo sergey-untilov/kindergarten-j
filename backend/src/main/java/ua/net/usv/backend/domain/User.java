@@ -23,8 +23,10 @@ public class User {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
-    @SequenceGenerator(name = "sequenceGenerator")
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
+//    @SequenceGenerator(name = "sequenceGenerator")
+    @GeneratedValue(generator = "USER_ID", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "USER_ID", sequenceName = "USER_SEQ", allocationSize = 1)
     private Long id;
 
     @NotNull
